@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+  <title>Off Canvas Reveal Menu Template for Bootstrap</title>
+  <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/prettify.css" rel="stylesheet">
+  <link href="css/navmenu-reveal.css" rel="stylesheet">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Nav tabs --><div class="card">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </div>
+          <div role="tabpanel" class="tab-pane" id="profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </div>
+          <div role="tabpanel" class="tab-pane" id="messages">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </div>
+          <div role="tabpanel" class="tab-pane" id="settings">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jasny-bootstrap.min.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/test_base.js"></script>
+<script src="js/lang-css.js"></script>
+<script type="text/javascript" src="http://livejs.com/live.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body onLoad="prettyPrint()">
+
+    <div class="navmenu navmenu-default navmenu-fixed-left">
+      <a class="navmenu-brand" href="#">Project name</a>
+      <ul class="nav navmenu-nav">
+        <li><a href="../navmenu/index.html">Slide in</a></li>
+        <li><a href="../navmenu-push/index.html">Push</a></li>
+        <li class="active"><a href="index.html">Reveal</a></li>
+        <li><a href="../navbar-offcanvas/index.html">Off canvas navbar</a></li>
+      </ul>
+      <ul class="nav navmenu-nav">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="canvas">
+
+      <header id="mainHeader" class="header navbar navbar-inverse navbar-fixed-top">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">NerdyNotes</a>
+      </header>
+
+      <div class="vj-topscrl">
+       <aside class="cd-read-more">
+        <ul>
+          <li>
+            <a href="#article">
+              <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36"><circle fill="none" stroke-width="3" cx="18" cy="18" r="16" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-45 18 18)"></circle></svg>
+            </a>
+          </li>
+        </ul>
+      </aside> <!-- .cd-read-more -->
+    </div>
+
+    <div class="container-fluid">
+      <h1>Bootstrap Affix Exaple</h1>
+      <h3>Fixed (sticky) navbar on scroll</h3>
+      <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+      <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+    </div>
+
+    <div class="container">
+      <div class="cd-articles">
+        <article id="article">
+         <div class="region">
+          <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+          <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
+          <p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
+          <p>Note that in this example, the navmenu doesn't have the <kbd>offcanvas</kbd> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
+          <p>Also take a look at the examples for a navmenu with <a href="../navmenu/index.html">slide in effect</a> and <a href="../navmenu-push/index.html">push effect</a>.</p>
+          <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+
+          <div class="codeblock col-lg-6">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#html">HTML</a></li>
+              <li><a data-toggle="tab" href="#css">CSS</a></li>
+              <li><a data-toggle="tab" href="#js">JS</a></li>
+              <li><a data-toggle="tab" href="#res">Result</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="html" class="tab-pane in active">
+                <xmp class="prettyprint linenums:0 lang-css vj-codebox" style="background: #1B2B34;"><!DOCTYPE html>
+                  <html lang="en">
+                  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+                  <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta name="description" content="">
+                    <meta name="author" content="">
+                    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+                    <title>Off Canvas Reveal Menu Template for Bootstrap</title>
+                    <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
+                    <link href="css/bootstrap.min.css" rel="stylesheet">
+                    <link href="css/prettify.css" rel="stylesheet">
+                    <link href="css/navmenu-reveal.css" rel="stylesheet">
+
+                    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+
+      <body onLoad="prettyPrint()">
+
+        <div class="navmenu navmenu-default navmenu-fixed-left">
+          <a class="navmenu-brand" href="#">Project name</a>
+          <ul class="nav navmenu-nav">
+            <li><a href="../navmenu/index.html">Slide in</a></li>
+            <li><a href="../navmenu-push/index.html">Push</a></li>
+            <li class="active"><a href="index.html">Reveal</a></li>
+            <li><a href="../navbar-offcanvas/index.html">Off canvas navbar</a></li>
+          </ul>
+          <ul class="nav navmenu-nav">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu navmenu-nav">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu navmenu-nav">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="canvas">
+
+          <header id="mainHeader" class="header navbar navbar-inverse navbar-fixed-top">
+            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">NerdyNotes</a>
+          </header>
+
+          <div class="vj-topscrl">
+           <aside class="cd-read-more">
+            <ul>
+              <li>
+                <a href="#article">
+                  <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36"><circle fill="none" stroke-width="3" cx="18" cy="18" r="16" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-45 18 18)"></circle></svg>
+                </a>
+              </li>
+            </ul>
+          </aside> <!-- .cd-read-more -->
+        </div>
+
+        <div class="container-fluid">
+          <h1>Bootstrap Affix Example</h1>
+          <h3>Fixed (sticky) navbar on scroll</h3>
+          <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+          <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+        </div>
+      </div>
+    </body>
+    </html>
+  </xmp>
+</div>
+<div id="css" class="tab-pane">
+  <xmp class="prettyprint linenums:0 lang-css vj-codebox" style="background: #1B2B34;">html, body {height:100%}
+    .navbar-toggle {float:left;margin-left:5px}
+    .navmenu {z-index:11}
+    .canvas { position:relative;left:0;z-index:22;min-height:100%;padding:50px 0 0 0;background:wheat;
+    box-shadow:-25px 0px 20px rgba(0,0,0,0.30);}
+
+    .navbar-brand{ padding-left:25px;-webkit-box-shadow:inset #FF8C00 20px 0 0 0;
+    box-shadow:inset #FF8C00 20px 0 0 0;-webkit-transition:-webkit-box-shadow;transition:box-shadow;
+    -webkit-transition-duration:.3s;transition-duration:.3s}
+    .navbar-brand:focus, .navbar-brand:hover
+    {-webkit-box-shadow:inset #FF8C00 200px 0 0 0;box-shadow:inset #FF8C00 200px 0 0 0}
+    .navbar-header a{ padding-left:25px;-webkit-box-shadow:inset #FF8C00 20px 0 0 0;box-shadow:inset #FF8C00 20px 0 0 0;
+    -webkit-transition:-webkit-box-shadow;transition:box-shadow;-webkit-transition-duration:.3s;transition-duration:.3s}
+    .navbar-header a:hover,.navbar-header a:focus
+    {-webkit-box-shadow:inset #FF8C00 200px 0 0 0;box-shadow:inset #FF8C00 200px 0 0 0}
+
+    .header{position:fixed;width:100%}
+    .header{font-size:1em;top:0;left:0;line-height:1;z-index:10;min-width:300px;transition:left .35s, top .35s}
+    .header.mainMenuOpen{top:0}
+    .header.tuckedUp{top:-50px}
+    .header.tuckedUp.mainMenuOpen{top:0}
+    .header{position:fixed;width:100%}
+
+    .canvas .container-fluid{ box-shadow:0 -80px 0 #F44336;background-color:#F44336;color:#fff; padding-bottom:20px}
+    .canvas .container{padding:10px;width:100%}
+    .region{ display:block; width:99%; background:#fff; margin:1em auto;
+    border-radius:5px; padding:1em; border:solid 1px #999; box-shadow:-5px 5px 0 #666}
+    .region .lead{ color:#FF6c00;border-left:solid 4px #ff8c00; padding-left:0.5em;
+    line-height:0.8em; margin-top:1.5em;padding-bottom:1em; margin-bottom:0}
+    .region .lead:first-letter{float:left;font-size:2em;line-height:2rem;font-weight:bold;
+    margin-right:3px;color:#9c0;font-family:ff-tisa-web-pro,georgia,serif; text-shadow:0.3rem 0.3rem 0px #444;}
+
+    .region a{ color:#04428C; text-decoration:none; padding:0.2em 0.4em;
+    -webkit-box-shadow:inset #FF8C00 0 -2px 0 0;box-shadow:inset #FF8C00 0 -2px 0 0;
+    -webkit-transition:-webkit-box-shadow;transition:box-shadow;-webkit-transition-duration:.3s;transition-duration:.3s}
+    .region a:hover, region a:focus{-webkit-box-shadow:inset #FF8C00 0 -1.6em 0 0;box-shadow:inset #FF8C00 0 -1.6em 0 0}
+
+    .vj-topscrl{ display:block;position:fixed;width:50px;height:50px;background:#444;bottom:10px;right:10px;
+    border-top-left-radius:50%;border-bottom-left-radius:50%;border-bottom-right-radius:50%;border-top-right-radius:8%;
+    -webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1100}
+    .vj-topscrl .cd-read-more ul{list-style:none}
+
+    /* -------------------------------- Articles -------------------------------- */
+    .cd-articles {position:relative}
+    .cd-articles::before {/* never visible - this is used in jQuery to check the current MQ */
+    content:'mobile';display:none}
+    .cd-articles article {padding:3em 0;border-bottom:1px solid #e6e6e6}
+    .cd-articles article:last-of-type {border-bottom:none}
+    .cd-articles p:last-of-type {padding-bottom:0}
+    /*-------------------------------- Aside --------------------------------*/
+    .cd-read-more{/*hide on mobile*/display:block;height:50px;
+    width:50px;background-color:transparent;z-index:1050}
+    .cd-read-more ul li{ list-style:none}
+    .cd-read-more a{display:block;position:relative;padding:0}
+    .cd-read-more a::before, .cd-read-more a::after {position:absolute}
+    .cd-read-more a::before{/* article number */
+    content:'';top:50%;bottom:auto;
+    -webkit-transform:translateY(-7%) translateX(-133%);
+    -moz-transform:translateY(-7%) translateX(-133%);-ms-transform:translateY(-7%) translateX(-133%);
+    -o-transform:translateY(-7%) translateX(-133%);transform:translateY(-7%) translateX(-133%);
+    left:1.1em;width:36px;height:36px;line-height:50px;border-radius:50%;color:transparent;
+    font-family:Georgia, serif;text-align:center;box-shadow:inset 0 0 0 4px #555/*#d9d9d9*/;
+    -webkit-transition:background-color 0.3s, color 0.3s;
+    -moz-transition:background-color 0.3s, color 0.3s;transition:background-color 0.3s, color 0.3s}
+    .cd-read-more a.read::before{background-color:transparent;border:solid 4px #EE7C00;
+    box-shadow:0 0 20px #777,inset 0 0 15px #777}
+    .cd-read-more a.reading svg{display:block}
+    .cd-read-more a.reading::before{background-color:transparent;color:transparent}
+    .cd-read-more li:last-of-type a::after{display:none}
+    .cd-read-more svg{/* this is the filling circle around the article number */
+    display:none;position:absolute;top:50%;bottom:auto;-webkit-transform:translateY(-7%) translateX(-133%);
+    -moz-transform:translateY(-7%) translateX(-133%);-ms-transform:translateY(-7%) translateX(-133%);
+    -o-transform:translateY(-7%) translateX(-133%);transform:translateY(-7%) translateX(-133%);
+    left:1.1em;stroke:#FF8C00}
+    .cd-articles {max-width:none;margin-bottom:5em}
+    .cd-articles::before {/* never visible - this is used in jQuery to check the current MQ */
+    content:'desktop'}
+
+    .dropdown .caret{margin-left:20px;margin-right:0px}
+    .navmenu ul{ border-bottom:1px solid rgba(200,200,200,0.90)}
+    .unline{display:block;position:relative;padding:0;width:100%;height:2px;
+    bottom:50%;right:0;background-color:rgba(0,225,255,1);
+    -webkit-transition:all 0.4s ease-in-out 0s;transition:all 0.4s ease-in-out 0s;
+    -moz-transition:all 0.4s ease-in-out 0s;-ms-transition:all 0.4s ease-in-out 0s;
+    -o-transition:all 0.4s ease-in-out 0s;-webkit-transform:scaleX(0);transform:scaleX(0);
+    -moz-transform:scaleX(0);-ms-transform:scaleX(0);-o-transform:scaleX(0)}
+    a:hover .unline{-webkit-transform:scaleX(1);transform:scaleX(1);
+    -moz-transform:scaleX(1); -ms-transform:scaleX(1);-o-transform:scaleX(1)}
+
+    @media (min-width:0) {.navbar-toggle {display:block;/* force showing the toggle */}}
+  </xmp>                    	
+</div>
+<div id="js" class="tab-pane">
+  <xmp class="prettyprint linenums:0 lang-css vj-codebox" style="background: #1B2B34;">var myGamePiece;
+    var myObstacles = [];
+    var myScore;
+    var myScore2;
+
+    function startGame() {
+    myGamePiece = new component(30, 30, "red", 50, 120);
+    myGamePiece.gravity = 0.50;
+    myScore = new component("30px", "Consolas", "black", 260, 30, "text");
+    myGameArea.start();
+  }
+  
+  var myGameArea = {
+  canvas : document.createElement("canvas"),
+  start : function() {
+  this.canvas.width = 500;
+  this.canvas.height = 300;
+  this.context = this.canvas.getContext("2d");
+  document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+  this.frameNo = 0;
+  this.interval = setInterval(updateGameArea, 20);
+},
+clear : function() {
+this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+}
+}
+
+function component(width, height, color, x, y, type) {
+this.type = type;
+this.score = 0;
+this.width = width;
+this.height = height;
+this.speedX = 0;
+this.speedY = 0;    
+this.x = x;
+this.y = y;
+this.gravity = 0;
+this.gravitySpeed = 0;
+this.bounce = 0.30;
+this.update = function() {
+ctx = myGameArea.context;
+if (this.type == "text") {
+ctx.font = this.width + " " + this.height;
+ctx.fillStyle = color;
+ctx.fillText(this.text, this.x, this.y);
+} else {
+ctx.fillStyle = color;
+ctx.fillRect(this.x, this.y, this.width, this.height);
+}
+}
+this.newPos = function() {
+this.gravitySpeed += this.gravity;
+this.x += this.speedX;
+this.y += this.speedY + this.gravitySpeed;
+this.hitBottom();
+this.hitTop();
+}
+
+this.hitBottom = function() {
+var rockbottom = myGameArea.canvas.height - this.height;
+if (this.y > rockbottom) {this.y = rockbottom;
+this.gravitySpeed = -(this.gravitySpeed * this.bounce);}
+}
+this.hitTop = function() {
+var rocktopp = 0;
+if (this.y < 0) {
+this.y = rocktopp;
+this.gravitySpeed = -(this.gravitySpeed * this.bounce);
+}
+}
+this.crashWith = function(otherobj) {
+var myleft = this.x;
+var myright = this.x + (this.width);
+var mytop = this.y;
+var mybottom = this.y + (this.height);
+var otherleft = otherobj.x;
+var otherright = otherobj.x + (otherobj.width);
+var othertop = otherobj.y;
+var otherbottom = otherobj.y + (otherobj.height);
+var crash = true;
+if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+crash = false;
+}
+return crash;
+}
+}
+
+function updateGameArea() {
+var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+for (i = 0; i < myObstacles.length; i += 1) {
+if (myGamePiece.crashWith(myObstacles[i])) {
+return;
+} 
+}
+myGameArea.clear();
+myGameArea.frameNo += 1;
+if (myGameArea.frameNo == 1 || everyinterval(200)) {
+x = myGameArea.canvas.width;
+minHeight = 20;
+maxHeight = 200;
+height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+minGap = 50;
+maxGap = 200;
+gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+myObstacles.push(new component(10, height, "green", x, 0));
+myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+}
+for (i = 0; i < myObstacles.length; i += 1) {
+myObstacles[i].x += -1;
+myObstacles[i].update();
+}
+myScore.text="SCORE: " + myGameArea.frameNo;
+myScore.update();
+myGamePiece.newPos();
+myGamePiece.update();
+}
+
+function everyinterval(n) {
+if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+return false;
+}
+
+function accelerate(n) {
+myGamePiece.gravity = n;
+}
+</xmp>
+</div>
+<div id="res" class="tab-pane">
+  <iframe src="File.html" style="width:100%;border:1px solid #ccc;" class="vj-codebox"></iframe>
+</div>
+</div>
+</div>
+
+<p>On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example,
+  the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by
+  wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get
+  the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't 
+  move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push 
+  effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the
+  Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move</p>
+</div>
+<div class="region">
+  <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+  <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
+  <p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
+  <p>Note that in this example, the navmenu doesn't have the <kbd>offcanvas</kbd> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
+  <p>Also take a look at the examples for a navmenu with <a href="../navmenu/index.html">slide in effect</a> and <a href="../navmenu-push/index.html">push effect</a>.</p>
+  <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+  <p>On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example,
+   the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by
+   wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get
+   the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't 
+   move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push 
+   effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the
+   Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move</p>
+ </div>
+ <div class="region">
+  <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+  <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
+  <p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
+  <p>Note that in this example, the navmenu doesn't have the <kbd>offcanvas</kbd> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
+  <p>Also take a look at the examples for a navmenu with <a href="../navmenu/index.html">slide in effect</a> and <a href="../navmenu-push/index.html">push effect</a>.</p>
+  <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+  <p>On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example,
+   the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by
+   wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get
+   the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't 
+   move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push 
+   effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the
+   Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move</p>
+ </div>
+ <div class="region">
+  <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+  <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
+  <p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
+  <p>Note that in this example, the navmenu doesn't have the <kbd>offcanvas</kbd> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
+  <p>Also take a look at the examples for a navmenu with <a href="../navmenu/index.html">slide in effect</a> and <a href="../navmenu-push/index.html">push effect</a>.</p>
+  <xmp class="prettyprint linenums:0 lang-css vj-codebox" style="background: #1B2B34;">canvas {
+    border:2px solid #d3d3d3;
+    background-color: #f1f1f1;
+  }
+  .w3-overlay{display:block; background:transparent; position:fixed; margin:-310px 0; width:510px; height:310px}
+</xmp>
+<p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+<p>On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example,
+  the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by
+  wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get
+  the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't 
+  move with the canvas.You get the reveal effect by wrapping the content in a div and setting the Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push 
+  effect, the menu doesn't On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the
+  Note that in this example, the navmenu doesn't have the contrary of the push effect, the menu doesn't move with the canvas.You get the reveal effect by wrapping the content in a div and setting the On the contrary of the push effect, the menu doesn't move</p>
+</div>
+<p>Also take a look at the examples for a navmenu with <a href="../navmenu/index.html">slide in effect</a> and <a href="../navmenu-push/index.html">push effect</a>.</p>
+<p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+<p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
+<p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
+<p>Note that in this example, the navmenu doesn't have the <code>offcanvas</code> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
+<p>Also take a look at the examples for a navmenu with <a href="../navmenu/index.html">slide in effect</a> and <a href="../navmenu-push/index.html">push effect</a>.</p>
+
+</article>
+</div><!-- /.cd articles -->
+</div><!--- container ---->
+
+<footer>
+  <div class="row">
+   <div class="col-lg-6 col-md-7 col-sm-7 col-xs-8">
+    <div class="vj-ftlink" style="vertical-align:middle">
+     <a href="#">Tutorials</a>&emsp;&bull;&emsp;<a href="#">Articles</a>&emsp;&bull;&emsp;
+     <a href="#">Playground</a>&emsp;&bull;&emsp;<a href="#">Blueprints</a>&emsp;&bull;&emsp;
+     <a href="#">Tutorials</a>&emsp;&bull;&emsp;<a href="#">Playground</a>&emsp;&bull;&emsp;
+     <a href="#">Blueprints</a>&emsp;&bull;&emsp;<a href="#">CSS Reference</a>&emsp;&bull;&emsp;
+     <a href="#">Tutorials</a>&emsp;&bull;&emsp;<a href="#">Articles</a>&emsp;&bull;&emsp;
+     <a href="#">Blueprints</a>&emsp;&bull;&emsp;<a href="#">CSS Reference</a>&emsp;&bull;&emsp;
+     <a href="#">Tutorials</a>&emsp;&bull;&emsp;<a href="#">Articles</a>&emsp;&bull;&emsp;
+     <a href="#">Playground</a>&emsp;&bull;&emsp;<a href="#">CSS Reference</a>
+   </div>
+ </div>
+ <div class="col-lg-6 col-md-5 col-sm-5 col-xs-4">
+  <div class="row">
+    <div class="col-xs-2">
+      <div class="thumbnail">
+        <a href="../w3images/nature.jpg" target="_blank">
+          <img src="file:///C|/Users/YourPalNurav/Desktop/QR code.jpg" alt="Moustiers Sainte Marie" style="width:100%">
+          <div class="caption">
+            <p>Loremipsum</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="thumbnail">
+        <a href="../w3images/nature.jpg" target="_blank">
+          <img src="file:///C|/Users/YourPalNurav/Desktop/QR code.jpg" alt="Moustiers Sainte Marie" style="width:100%">
+          <div class="caption">
+            <p>Loremipsum</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="thumbnail">
+        <a href="../w3images/nature.jpg" target="_blank">
+          <img src="file:///C|/Users/YourPalNurav/Desktop/QR code.jpg" alt="Moustiers Sainte Marie" style="width:100%">
+          <div class="caption">
+            <p>Loremipsum</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="thumbnail">
+        <a href="../w3images/nature.jpg" target="_blank">
+          <img src="file:///C|/Users/YourPalNurav/Desktop/QR code.jpg" alt="Moustiers Sainte Marie" style="width:100%">
+          <div class="caption">
+            <p>Loremipsum</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>     
+</div>
+</footer>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+
+<!-- Mirrored from www.jasny.net/bootstrap/examples/navmenu-reveal/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jun 2013 02:01:20 GMT -->
+</html>
+
+
+<html>
+  <header>
+    <div>
+      
+    </div>
+  </header>
+</html>
