@@ -8,17 +8,18 @@
 		<title>YPN|Home</title>
 		
 	    <link href='https://www.w3schools.com/lib/w3.css' rel='stylesheet' type='text/css'/>
-	    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+	    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
 	    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
 	    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css" />
 	    <link href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css' rel='stylesheet' type='text/css'/>
 	    <link href='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css' rel='stylesheet' type='text/css'/>
 	    <link href='css/ypn.css' rel='stylesheet' type='text/css'/>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="http://cdn.jsdelivr.net/hammerjs/2.0.8/hammer.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.js"></script>
-		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script type="text/javascript" src="http://cdn.jsdelivr.net/hammerjs/2.0.8/hammer.min.js"></script>
+  		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     	<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
     	<script src='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js'></script>
     	<script src='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-css.min.js'></script>
@@ -96,6 +97,41 @@
 				
 			});
 			
+			$(document).ready(function() {
+         $(".navbar-collapse").mmenu({
+          wrappers: ["bootstrap4"],
+          navbar: {title: ""},
+					extensions	: [ /*"listview-30",*/"multiline","theme-dark","effect-panels-slide-100","effect-listitems-slide","shadow-page","border-full","pagedim-black","position-right"],
+					setSelected	: true,
+					counters	: true,
+					searchfield : {
+						placeholder		: 'Search menu items . . .'
+					},
+					navbars		: [
+					  {  "position":"top",
+             "content": ["<a href='https://yourpalnurav.blogspot.in/' style='color:aqua'><b>Menu</b></a>","close"]
+            }, { "position":"top",
+							type		: 'tabs',
+							content		: [ 
+								'<a href="#panel-menu3"><i class="fa fa-bars"></i> <span>Menu3</span></a>', 
+								'<a href="#panel-account3"><i class="fa fa-user"></i> <span>Account3</span></a>', 
+								'<a href="#panel-cart3"><i class="fa fa-shopping-cart"></i> <span>Cart3</span></a>'
+							]},
+						{
+							content		: [ 'searchfield' ]},{
+							position	: 'bottom',
+							content		: [ '<a href="#/"><span class="fa fa-twitter"></span></a>',
+							              '<a href="#/"><span class="fa fa-facebook"></span></a>',
+							              '<a href="#/"><span class="fa fa-youtube"></span></a>' ]
+						}
+					]
+				}, {
+					searchfield : {
+						"clear" 		: true,"resultsPanel": true,"showTextItems": true
+					}
+         });
+      });
+			
 		</script>
 		
 	</head>
@@ -104,26 +140,55 @@
 		<div id="page">
 			<div class="content" id="content">
 			  
-        <!--   Narbar First   -->
+        <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <a class="navbar-brand" href="#menu1"><i class="fa fa-navicon" style="font-size:24px"></i></a>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link py-0" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link py-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0 float-right" href="#menu2"><i class="fa fa-car" style="font-size:24px"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div><!--   Narbar First   -->
 			  
-  			<div class="">
+			  <div class="testMatter">
+					<p><strong>This is a demo</strong><br />
   				<a href="#menu1"><i class="fa fa-navicon" style="font-size:24px"></i></a>
   				Demo
   				<a href="#menu2"><i class="fa fa-car" style="font-size:24px"></i></a>
-  			</div>
-			  <div class="testMatter">
-					<p><strong>This is a demo</strong><br />
 						Click the menu icon to open the menu.</p>
 					<p>Some of the links in the menu link to a section on this page.</p>
 					<p><strong>Widescreen extension</strong><br />
 						On wider screens, the menu will always be opened.</p>
-					<p><a href="#menu">Open the menu.</a></p>
+					<p><a href="#menu1">Open the menu1.</a></p>
 					<p><strong>Drag add-on</strong><br />
 						You can also drag the page to the right to open the menu.</p>
-					<p><a href="#menu">Open the menu.</a></p>
+					<p><a href="#menu2">Open the menu2.</a></p>
 					<p><strong>Fixed elements</strong><br />
 						Notice how the fixed header and footer slide out along with the page.</p>
-					<p><a href="#menu">Open the menu.</a></p>
+					<p><a href="#menu1">Open the menu1.</a></p>
 				</div>
 			</div>
 			
