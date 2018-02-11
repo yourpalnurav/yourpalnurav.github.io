@@ -1,16 +1,243 @@
+<!DOCTYPE html>
 <html>
-    <title>
-        YPN
-    </title>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="YourPalNurav" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
 
-    <head>
+		<title>YPN&rsaquo;Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		
+    <link href='https://www.w3schools.com/lib/w3.css' rel='stylesheet' type='text/css'/>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css" />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css' rel='stylesheet' type='text/css'/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css' rel='stylesheet' type='text/css'/>
 
-    </head>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/hammerjs/2.0.8/hammer.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.js"></script>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-css.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js'></script>
+		
+		<script type="text/javascript">
 
-    <body>
-        <div class='container'>
-            Github Pages
-        </div>
-    </body>
+			$(function() {
+				$('nav#menu1').mmenu({
+				  navbar: {title: ""},
+					extensions	: [ /*"listview-30",*/"multiline","theme-dark","effect-panels-slide-100","effect-listitems-slide","shadow-page","border-full","pagedim-black"],
+					setSelected	: true,
+					counters	: true,
+					searchfield : {
+						placeholder		: 'Search menu items . . .'
+					},
+					navbars		: [
+					  {  "position":"top",
+             "content": ["<a href='https://yourpalnurav.blogspot.in/' style='color:aqua'><b>Menu</b></a>","close"]
+            }, { "position":"top",
+							type		: 'tabs',
+							content		: [ 
+								'<a href="#panel-menu"><i class="fa fa-bars"></i> <span>Menu</span></a>', 
+								'<a href="#panel-account"><i class="fa fa-user"></i> <span>Account</span></a>', 
+								'<a href="#panel-cart"><i class="fa fa-shopping-cart"></i> <span>Cart</span></a>'
+							]},
+						{
+							content		: [ 'searchfield' ]},{
+							position	: 'bottom',
+							content		: [ '<a href="#/"><span class="fa fa-twitter"></span></a>',
+							              '<a href="#/"><span class="fa fa-facebook"></span></a>',
+							              '<a href="#/"><span class="fa fa-youtube"></span></a>' ]
+						}
+					]
+				}, {
+					searchfield : {
+						"clear" 		: true,"resultsPanel": true,"showTextItems": true
+					}
+				});
+				
+			});
+			
+			$(function() {
+				$('nav#menu2').mmenu({
+				  navbar: {title: ""},
+					extensions	: [ /*"listview-30",*/"multiline","theme-dark","effect-panels-slide-100","effect-listitems-slide","shadow-page","border-full","pagedim-black","position-right"],
+					setSelected	: true,
+					counters	: true,
+					searchfield : {
+						placeholder		: 'Search menu items . . .'
+					},
+					navbars		: [
+					  {  "position":"top",
+             "content": ["<a href='https://yourpalnurav.blogspot.in/' style='color:aqua'><b>Menu2</b></a>","close"]
+            }, { "position":"top",
+							type		: 'tabs',
+							content		: [ 
+								'<a href="#panel-menu2"><i class="fa fa-bars"></i> <span>Menu2</span></a>', 
+								'<a href="#panel-account2"><i class="fa fa-user"></i> <span>Account2</span></a>', 
+								'<a href="#panel-cart2"><i class="fa fa-shopping-cart"></i> <span>Cart2</span></a>'
+							]},
+						{
+							content		: [ 'searchfield' ]},{
+							position	: 'bottom',
+							content		: [ '<a href="#/"><span class="fa fa-twitter"></span></a>',
+							              '<a href="#/"><span class="fa fa-facebook"></span></a>',
+							              '<a href="#/"><span class="fa fa-youtube"></span></a>' ]
+						}
+					]
+				}, {
+					searchfield : {
+						"clear" 		: true,"resultsPanel": true,"showTextItems": true
+					}
+				});
+				
+			});
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		<div id="page">
+			<div class="content" id="content">
+			  
+        <!--   Narbar First   -->
+			  
+  			<div class="">
+  				<a href="#menu1"><i class="fa fa-navicon" style="font-size:24px"></i></a>
+  				Demo
+  				<a href="#menu2"><i class="fa fa-car" style="font-size:24px"></i></a>
+  			</div>
+			  <div class="testMatter">
+					<p><strong>This is a demo</strong><br />
+						Click the menu icon to open the menu.</p>
+					<p>Some of the links in the menu link to a section on this page.</p>
+					<p><strong>Widescreen extension</strong><br />
+						On wider screens, the menu will always be opened.</p>
+					<p><a href="#menu">Open the menu.</a></p>
+					<p><strong>Drag add-on</strong><br />
+						You can also drag the page to the right to open the menu.</p>
+					<p><a href="#menu">Open the menu.</a></p>
+					<p><strong>Fixed elements</strong><br />
+						Notice how the fixed header and footer slide out along with the page.</p>
+					<p><a href="#menu">Open the menu.</a></p>
+				</div>
+			</div>
+			
+			<nav id="menu1">
+				<div id="panel-menu">
+					<ul>
+						<li><a href="#/">Home</a></li>
+						<li><span>About us</span>
+							<ul>
+								<li><a href="#/">History</a></li>
+								<li><span>The team</span>
+									<ul>
+										<li><a href="#/">Management</a></li>
+										<li><a href="#/">Sales</a></li>
+										<li><a href="#/">Development</a></li>
+									</ul>
+								</li>
+								<li><a href="#/">Our address</a></li>
+							</ul>
+						</li>
+						<li><a href="#/">Contact</a></li>
 
+						<li class="Divider">Other demos</li>
+						<li><a href="default.html">Default demo</a></li>
+						<li><a href="onepage.html">One page demo</a></li>
+					</ul>
+				</div>
+
+				<div id="panel-account">
+					<ul>
+						<li><a href="#/">Home2</a></li>
+						<li><span>About u2s</span>
+							<ul>
+								<li><a href="#/">History2</a></li>
+								<li><span>The team2</span>
+									<ul>
+										<li><a href="#/">Management2</a></li>
+										<li><a href="#/">Sales2</a></li>
+										<li><a href="#/">Development2</a></li>
+									</ul>
+								</li>
+								<li><a href="#/">Our address2</a></li>
+							</ul>
+						</li>
+						<li><a href="#/">Contact2</a></li>
+
+						<li class="Divider">Other demo2s</li>
+						<li><a href="default.html">Default demo2</a></li>
+						<li><a href="onepage.html">One page demo2</a></li>
+					</ul>
+				</div>
+
+				<div id="panel-cart">
+					<p style="text-align: center; padding-top: 30px;">Your shoppingcart is empty.<br />
+						<a href="#/">Continue shopping.</a></p>
+				</div>
+			</nav>
+			
+			<nav id="menu2">
+				<div id="panel-menu2">
+					<ul>
+						<li><a href="#/">Home</a></li>
+						<li><span>About us</span>
+							<ul>
+								<li><a href="#/">History</a></li>
+								<li><span>The team</span>
+									<ul>
+										<li><a href="#/">Management</a></li>
+										<li><a href="#/">Sales</a></li>
+										<li><a href="#/">Development</a></li>
+									</ul>
+								</li>
+								<li><a href="#/">Our address</a></li>
+							</ul>
+						</li>
+						<li><a href="#/">Contact</a></li>
+
+						<li class="Divider">Other demos</li>
+						<li><a href="default.html">Default demo</a></li>
+						<li><a href="onepage.html">One page demo</a></li>
+					</ul>
+				</div>
+
+				<div id="panel-account2">
+					<ul>
+						<li><a href="#/">Home2</a></li>
+						<li><span>About u2s</span>
+							<ul>
+								<li><a href="#/">History2</a></li>
+								<li><span>The team2</span>
+									<ul>
+										<li><a href="#/">Management2</a></li>
+										<li><a href="#/">Sales2</a></li>
+										<li><a href="#/">Development2</a></li>
+									</ul>
+								</li>
+								<li><a href="#/">Our address2</a></li>
+							</ul>
+						</li>
+						<li><a href="#/">Contact2</a></li>
+
+						<li class="Divider">Other demo2s</li>
+						<li><a href="default.html">Default demo2</a></li>
+						<li><a href="onepage.html">One page demo2</a></li>
+					</ul>
+				</div>
+
+				<div id="panel-cart2">
+					<p style="text-align: center; padding-top: 30px;">Your shoppingcart is empty.<br />
+						<a href="#/">Continue shopping.</a></p>
+				</div>
+			</nav>
+			
+		</div>
+		
+	</body>
 </html>
