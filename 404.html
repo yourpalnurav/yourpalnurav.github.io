@@ -1,88 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
-    <style>
-      body{background:#222 !important;}
-      .bg-dark2{background:#111}
+<head>
+    <meta charset="UTF-8">
+    <title>YPN|Home</title>
+    <link rel="icon" href="icons/ypn.png">
+    <meta name="theme-color" content="#4285f4">
+    <meta name="msapplication-navbutton-color" content="#4285f4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+    <!--link rel='stylesheet prefetch' href='css/bootstrap.min.css'/>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css" />
+    <link rel="stylesheet" href="css/ypn.min.css">
+    <style type="text/css">
+     ::-webkit-scrollbar {width: 8px;height: 3px;background: #222}
+     ::-webkit-scrollbar-thumb {background-color: aqua;border: 2px solid #222}
+     ::scrollbar {width: 8px;height: 3px;background: #222}
+     ::scrollbar-thumb {background-color: aqua;border: 2px solid #222}
+     ::-moz-scrollbar {width: 8px;height: 3px;background: #222}
+     ::-moz-scrollbar-thumb {background-color: aqua;border: 2px solid #222}
     </style>
-  </head>
-  
-    <header>
- <nav class="navbar fixed-top navbar-expand-sm bg-dark2 navbar-dark">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Navbar</a>
+</head>
 
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link3</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    </header>
-    <body>
-          <div class='container-fluid text-center' style='margin-top:60px;color:#9F7BC3'>
-            <span class='display-1'>
-              <b>404</b>
-            </span><br>
-            <span class='display-4'>
-              There's nothing here!
-            </span><hr style='background:#9F7BC3'><br>
-            <span class='h1-responsive text-white container'>
-              Sorry, looks like you have found a broken link;<br>
-              Please try using the navigation or the search bar below.
-            </span>
-          </div>
-
-      
-     
-          <div class='container-fluid fixed-bottom'>
-                <div class='row'>
-                  <div class='col-2'>
-                  </div>
-                  <div class='col-8'>
-                    <gcse:search ></gcse:search>
-                  </div>
-                  <div class='col-2'>
-                  </div>
+<body>
+    <div id="page">
+        <nav class="Fixed navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark vj-bar">
+            <a class="navbar-brand" href="#menu1"><span class="navbar-toggler-icon"></span></a>
+            <a class="navbar-brand py-0" href="#">
+                <svg class="iconypn" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576.90002 577.79999" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <g>
+                        <path d="m190.8 570.3c-4.169-4.443-13.43-17.77-17.83-25.65-3.791-6.794-10.9-21.65-10.9-22.77 0-0.5213-0.5706-2.041-1.268-3.377-1.172-2.245-3.424-9.443-6.488-20.73-1.547-5.699-4.141-19.7-4.141-22.35 0-1.087 0.7819-3.091 1.738-4.455 0.9556-1.364 3.614-5.415 5.908-9.003 13.37-20.92 35.33-41.95 53.9-51.61 3.189-2.576 6.779-3.834 10.24-5.378 16.18-7.566 22.33-9.301 47.24-13.32 29.16-4.004 55.19 4.838 80.48 11.26 11.6 3.409 21.19 5.462 32.49 8.277 11.83 2.987 21.63 4.429 44.39 6.533 11.75 1.087 35.2 1.026 40.27-0.105 2.265-0.5049 6.176-1.348 8.691-1.873 6.95-1.451 17.21-6.866 22.18-11.7 15.38-15.44 19.59-25.44 5.712-21.3-15.5 3.78-32.39 5.63-49.39 5.738-42.25 1.195-84.52-12.86-121.7-17.41-26.9-3.036-29.24-3.149-42.39-2.04-18.58 1.607-36.27 3.31-51.27 9.644-9.719 3.649-11.95 4.76-19.66 8.205-2.677 0.5354-20.16 10.54-28.18 16.12-9.046 6.302-24.89 20.46-32.43 28.99-4.422 5.001-12.31 14.68-13.68 16.8-0.755 1.164-2.814 4.035-4.576 6.38s-3.697 5.068-4.3 6.05c-8.479 13.81-13.66 23.04-17.94 31.99-4.204 8.771-6.247 13.41-10.68 24.25-21.43 66.32-13.35 59.99-32.52-6.864-3.683-9.628-5.38-20.9-8.298-29.08-3.623-15.34-5.561-28.92-6.84-39.11-0.4727-3.775-1.34-10.57-1.928-15.1-0.5877-4.53-1.31-13.76-1.605-20.52-0.3487-7.986-0.9031-12.4-1.585-12.63-0.5768-0.1907-3.658 2.865-6.847 6.79s-6.747 8.167-7.907 9.425-3.844 4.86-5.965 8.003c-6.023 8.925-6.461 8.249-5.921-9.147 0.6522-14.16 2.275-21.59 3.336-31.34 0.9082-8.509 2.194-16.19 3.905-23.34 0.5424-2.265 1.528-6.589 2.19-9.609 1.667-7.606 3.175-13.16 4.598-16.93 1.936-8.093 5.677-16.33 7.665-23.34 2.473-6.736 5.528-13.9 8.122-19.68 4.243-9.482 9.459-20.03 12.45-25.17 1.757-3.02 3.828-6.727 4.604-8.237 0.7752-1.51 2.229-3.981 3.231-5.491s2.135-3.378 2.519-4.152c1.941-3.916 14.43-21.84 21.92-31.46 7.164-9.203 17.27-20.99 23.3-27.18 0.8296-0.8511 1.769-2.928 2.088-4.615 0.3189-1.687 1.152-5.127 1.851-7.643 2.616-9.475 4.425-19.13 7.712-26.58 1.065-4.29 2.115-6.843 5.185-14.75 2.309-6.656 4.067-11.14 5.891-15.42 2.107-4.944 13.24-27.2 16.03-32.03 1.74-3.02 3.803-6.727 4.583-8.237 1.992-3.856 6.693-11.34 7.757-12.35 0.2647-0.2517 2.093-2.929 4.064-5.949 12.04-18.45 42.95-51.71 48.07-51.71 0.9428 0 3.574 2.068 5.846 4.596 3.663 4.074 13.63 18.17 15.5 21.92 0.3844 0.7711 1.757 3.255 3.05 5.52 6.952 12.22 8.515 18.55 14.59 28.24l2.32 2.757 5.522-3.374c10.62-6.488 16.85-9.912 21.87-12.02 11.52-6.051 25.72-11.05 31.12-13.14 1.258-0.6494 5.136-1.946 8.616-2.882l6.328-1.702c7.106 13.38 6.561 18.07 11.06 37.68 0.7132 2.841 1.557 8.666 1.875 12.94 0.3183 4.278 1.179 11.49 1.913 16.04 2.088 12.39 1.237 25.6 1.28 35.82l0.0982 23.03 3.74 3.74c9.175 7.998 19.69 14.49 28.46 23.06 11.33 12.19 16.26 25.35 22.1 38.65 0.7025 1.586 2.191 5.973 3.308 9.748s2.57 8.511 3.229 10.52c0.659 2.013 1.483 5.102 1.831 6.864 7.491 27.01 19.23 45.57 42.52 61.32 1.147 0.755 3.16 2.247 4.474 3.315 3.46 2.812 32.6 22.33 40.34 27.01 19.69 11.93 40.85 23.94 42.35 24.86 2.865 1.748 2.019 2.507-0.4982 7.227-17.5 29.47-31.84 40.45-60.45 53.3-8.591 3.906-35.45 5.56-63.29 3.467-36.81-3.38-47.53-7.186-67.72-10.99-10.73-2.257-20.42-4.558-29.74-7.514-3.151-1.007-6.294-1.83-6.983-1.83-4.213 18.26 16.25 56.25 25.03 69.76 3.587 5.317 2.523 6.433-5.459 5.725-3.653-0.3243-8.036-1.017-9.739-1.54-1.703-0.5228-5.409-1.488-8.237-2.144-11.09-2.574-20.73-5.674-26.85-8.632-1.785-0.8632-2.823-0.927-3.669-0.2252-5.083 4.219-4.117 35.59 1.638 53.19 2.022 6.181 1.227 7.135-4.809 5.771-7.35-1.661-21.9-6.341-25.54-8.217-0.9539-0.491-6.13-3.043-11.5-5.672-5.372-2.629-11.78-6.107-14.25-7.731-6.918-4.556-7.136-4.564-10.98-0.4165-1.892 2.04-3.816 4.394-4.276 5.231-0.4603 0.8366-1.094 1.727-1.407 1.979-3.352 2.689-17.68 28.27-22.04 39.35-2.611 6.639-4.277 11.08-4.899 13.04-0.7556 2.39-2.58 1.95-5.698-1.373zm-47.5-186.3c7.336-4.706 19.92-10.32 37.06-16.53 1.762-0.6384 5.056-1.581 7.321-2.095 2.265-0.5138 4.53-1.262 5.033-1.662 3.709-1.547 7.573-1.731 11.46-3.16 1.771-0.6642 5.58-1.502 8.465-1.863 2.885-0.3605 5.246-0.987 5.246-1.392 0-1.495-12.71-2.018-34.98-1.438l-22.87 0.5954 0.4826-3.452c0.2654-1.898 0.8764-6.335 1.358-9.858 0.4813-3.523 1.572-8.671 2.424-11.44 3.65-11.86 5.147-16.38 7.426-22.42 3.63-9.623 3.512-10.46-1.885-13.41-3.013-2.068-6.96-2.583-9.929-3.947-9.638-3.172-34.23-7.451-32.46-5.981 0.6561 0 7.869 3.323 16.03 7.385 9.731 4.844 15.03 7.994 15.4 9.155 0.4902 1.544-1.047 5.851-4.368 12.24-2.216 4.263-8.761 23.56-10.88 32.08-1.013 3.607-2.641 7.313-3.138 10.71-0.3057 2.161-1.104 5.783-1.774 8.048-0.6702 2.265-1.484 6.177-1.808 8.694-0.3242 2.517-1.039 5.862-1.588 7.435-2.18 6.24 0.5953 7.041 7.98 2.304zm235.9-93.46c6.917-2.614 7.374 1.795 2.035-6.439-7.442-12.95-10.64-16.57-17.56-19.84-4.23-2.003-5.609-2.192-13.28-1.822-11.66 0.5629-27.96 4.265-28.77 6.534-0.4104 1.146 11.67 15.21 15.44 17.56 1.443 0.9024 10.11 6.349 12.44 6.77 9.934 2.739 17.59-0.5692 29.7-2.766zm-182.7-70c0.2763-0.7201 0.0524-11.74-0.4978-24.48-3.698-30.66-0.5337-60.97 3.599-92.83 1.238-10.39 3.444-22.29 5.111-28.97 3.419-12 5.28-25.09 9.133-35.51 3.739-10.33-0.2991-2.593-3.412 0.5199-4.169 4.169-16.82 22.95-22.2 32.95-1.353 2.517-2.915 5.4-3.471 6.406-0.5557 1.007-1.35 2.448-1.765 3.203s-1.837 3.638-3.16 6.406-2.793 5.783-3.267 6.698c-1.98 3.827-8.088 18.4-8.094 19.31-0.003 0.5424-0.6072 2.14-1.343 3.549-0.7353 1.41-1.737 3.881-2.226 5.491-1.198 3.942-3.61 10.74-4.609 12.99-3.272 12.14-3.246 11.8-6.245 22.42-0.496 1.258 0 0-1.576 7.321-3.748 20.15-3.009 13.11-4.317 23.17-1.352 2.619 1.122 5.404 9.052 10.19 3.933 2.373 12.09 7.361 18.13 11.08 6.04 3.723 11.6 7.054 12.35 7.402 0.755 0.348 2.355 1.386 3.555 2.307 2.62 2.01 4.558 2.145 5.241 0.3653zm106-121.3c3.316-6.795 7.498-15.03 9.292-18.3 3.344-6.098 4.269-7.599 11.65-18.9 2.351-3.602 4.274-7.027 4.274-7.612 0-2.655-12.48 3.857-30.66 16-21.15 14.13-19.95 13.03-19.32 17.67 3.48 12.15 5.168 19.16 11.6 31.35 1.504 1.504 2.161 1.668 3.203 0.8031 3.082-7.212 6.902-14.74 9.958-21z" />
+                    </g>
+                </svg>Navbar</a>
+            <a class="navbar-brand d-lg-none navbar-toggler" href="#menu2"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item py-0 active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item py-0">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item py-0">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item py-0 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown link
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Submenu action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another submenu action</a></li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--   .narbar Bootstrap Ends   -->
+        <div class="testMatter">
+            <div class="container pt-5">
+                <div class="row justify-content-center align-items-center">
+                    <svg height="120" width="120" fill="aqua" class="icon404" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576.90002 577.79999" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <g>
+                            <path d="m190.8 570.3c-4.169-4.443-13.43-17.77-17.83-25.65-3.791-6.794-10.9-21.65-10.9-22.77 0-0.5213-0.5706-2.041-1.268-3.377-1.172-2.245-3.424-9.443-6.488-20.73-1.547-5.699-4.141-19.7-4.141-22.35 0-1.087 0.7819-3.091 1.738-4.455 0.9556-1.364 3.614-5.415 5.908-9.003 13.37-20.92 35.33-41.95 53.9-51.61 3.189-2.576 6.779-3.834 10.24-5.378 16.18-7.566 22.33-9.301 47.24-13.32 29.16-4.004 55.19 4.838 80.48 11.26 11.6 3.409 21.19 5.462 32.49 8.277 11.83 2.987 21.63 4.429 44.39 6.533 11.75 1.087 35.2 1.026 40.27-0.105 2.265-0.5049 6.176-1.348 8.691-1.873 6.95-1.451 17.21-6.866 22.18-11.7 15.38-15.44 19.59-25.44 5.712-21.3-15.5 3.78-32.39 5.63-49.39 5.738-42.25 1.195-84.52-12.86-121.7-17.41-26.9-3.036-29.24-3.149-42.39-2.04-18.58 1.607-36.27 3.31-51.27 9.644-9.719 3.649-11.95 4.76-19.66 8.205-2.677 0.5354-20.16 10.54-28.18 16.12-9.046 6.302-24.89 20.46-32.43 28.99-4.422 5.001-12.31 14.68-13.68 16.8-0.755 1.164-2.814 4.035-4.576 6.38s-3.697 5.068-4.3 6.05c-8.479 13.81-13.66 23.04-17.94 31.99-4.204 8.771-6.247 13.41-10.68 24.25-21.43 66.32-13.35 59.99-32.52-6.864-3.683-9.628-5.38-20.9-8.298-29.08-3.623-15.34-5.561-28.92-6.84-39.11-0.4727-3.775-1.34-10.57-1.928-15.1-0.5877-4.53-1.31-13.76-1.605-20.52-0.3487-7.986-0.9031-12.4-1.585-12.63-0.5768-0.1907-3.658 2.865-6.847 6.79s-6.747 8.167-7.907 9.425-3.844 4.86-5.965 8.003c-6.023 8.925-6.461 8.249-5.921-9.147 0.6522-14.16 2.275-21.59 3.336-31.34 0.9082-8.509 2.194-16.19 3.905-23.34 0.5424-2.265 1.528-6.589 2.19-9.609 1.667-7.606 3.175-13.16 4.598-16.93 1.936-8.093 5.677-16.33 7.665-23.34 2.473-6.736 5.528-13.9 8.122-19.68 4.243-9.482 9.459-20.03 12.45-25.17 1.757-3.02 3.828-6.727 4.604-8.237 0.7752-1.51 2.229-3.981 3.231-5.491s2.135-3.378 2.519-4.152c1.941-3.916 14.43-21.84 21.92-31.46 7.164-9.203 17.27-20.99 23.3-27.18 0.8296-0.8511 1.769-2.928 2.088-4.615 0.3189-1.687 1.152-5.127 1.851-7.643 2.616-9.475 4.425-19.13 7.712-26.58 1.065-4.29 2.115-6.843 5.185-14.75 2.309-6.656 4.067-11.14 5.891-15.42 2.107-4.944 13.24-27.2 16.03-32.03 1.74-3.02 3.803-6.727 4.583-8.237 1.992-3.856 6.693-11.34 7.757-12.35 0.2647-0.2517 2.093-2.929 4.064-5.949 12.04-18.45 42.95-51.71 48.07-51.71 0.9428 0 3.574 2.068 5.846 4.596 3.663 4.074 13.63 18.17 15.5 21.92 0.3844 0.7711 1.757 3.255 3.05 5.52 6.952 12.22 8.515 18.55 14.59 28.24l2.32 2.757 5.522-3.374c10.62-6.488 16.85-9.912 21.87-12.02 11.52-6.051 25.72-11.05 31.12-13.14 1.258-0.6494 5.136-1.946 8.616-2.882l6.328-1.702c7.106 13.38 6.561 18.07 11.06 37.68 0.7132 2.841 1.557 8.666 1.875 12.94 0.3183 4.278 1.179 11.49 1.913 16.04 2.088 12.39 1.237 25.6 1.28 35.82l0.0982 23.03 3.74 3.74c9.175 7.998 19.69 14.49 28.46 23.06 11.33 12.19 16.26 25.35 22.1 38.65 0.7025 1.586 2.191 5.973 3.308 9.748s2.57 8.511 3.229 10.52c0.659 2.013 1.483 5.102 1.831 6.864 7.491 27.01 19.23 45.57 42.52 61.32 1.147 0.755 3.16 2.247 4.474 3.315 3.46 2.812 32.6 22.33 40.34 27.01 19.69 11.93 40.85 23.94 42.35 24.86 2.865 1.748 2.019 2.507-0.4982 7.227-17.5 29.47-31.84 40.45-60.45 53.3-8.591 3.906-35.45 5.56-63.29 3.467-36.81-3.38-47.53-7.186-67.72-10.99-10.73-2.257-20.42-4.558-29.74-7.514-3.151-1.007-6.294-1.83-6.983-1.83-4.213 18.26 16.25 56.25 25.03 69.76 3.587 5.317 2.523 6.433-5.459 5.725-3.653-0.3243-8.036-1.017-9.739-1.54-1.703-0.5228-5.409-1.488-8.237-2.144-11.09-2.574-20.73-5.674-26.85-8.632-1.785-0.8632-2.823-0.927-3.669-0.2252-5.083 4.219-4.117 35.59 1.638 53.19 2.022 6.181 1.227 7.135-4.809 5.771-7.35-1.661-21.9-6.341-25.54-8.217-0.9539-0.491-6.13-3.043-11.5-5.672-5.372-2.629-11.78-6.107-14.25-7.731-6.918-4.556-7.136-4.564-10.98-0.4165-1.892 2.04-3.816 4.394-4.276 5.231-0.4603 0.8366-1.094 1.727-1.407 1.979-3.352 2.689-17.68 28.27-22.04 39.35-2.611 6.639-4.277 11.08-4.899 13.04-0.7556 2.39-2.58 1.95-5.698-1.373zm-47.5-186.3c7.336-4.706 19.92-10.32 37.06-16.53 1.762-0.6384 5.056-1.581 7.321-2.095 2.265-0.5138 4.53-1.262 5.033-1.662 3.709-1.547 7.573-1.731 11.46-3.16 1.771-0.6642 5.58-1.502 8.465-1.863 2.885-0.3605 5.246-0.987 5.246-1.392 0-1.495-12.71-2.018-34.98-1.438l-22.87 0.5954 0.4826-3.452c0.2654-1.898 0.8764-6.335 1.358-9.858 0.4813-3.523 1.572-8.671 2.424-11.44 3.65-11.86 5.147-16.38 7.426-22.42 3.63-9.623 3.512-10.46-1.885-13.41-3.013-2.068-6.96-2.583-9.929-3.947-9.638-3.172-34.23-7.451-32.46-5.981 0.6561 0 7.869 3.323 16.03 7.385 9.731 4.844 15.03 7.994 15.4 9.155 0.4902 1.544-1.047 5.851-4.368 12.24-2.216 4.263-8.761 23.56-10.88 32.08-1.013 3.607-2.641 7.313-3.138 10.71-0.3057 2.161-1.104 5.783-1.774 8.048-0.6702 2.265-1.484 6.177-1.808 8.694-0.3242 2.517-1.039 5.862-1.588 7.435-2.18 6.24 0.5953 7.041 7.98 2.304zm235.9-93.46c6.917-2.614 7.374 1.795 2.035-6.439-7.442-12.95-10.64-16.57-17.56-19.84-4.23-2.003-5.609-2.192-13.28-1.822-11.66 0.5629-27.96 4.265-28.77 6.534-0.4104 1.146 11.67 15.21 15.44 17.56 1.443 0.9024 10.11 6.349 12.44 6.77 9.934 2.739 17.59-0.5692 29.7-2.766zm-182.7-70c0.2763-0.7201 0.0524-11.74-0.4978-24.48-3.698-30.66-0.5337-60.97 3.599-92.83 1.238-10.39 3.444-22.29 5.111-28.97 3.419-12 5.28-25.09 9.133-35.51 3.739-10.33-0.2991-2.593-3.412 0.5199-4.169 4.169-16.82 22.95-22.2 32.95-1.353 2.517-2.915 5.4-3.471 6.406-0.5557 1.007-1.35 2.448-1.765 3.203s-1.837 3.638-3.16 6.406-2.793 5.783-3.267 6.698c-1.98 3.827-8.088 18.4-8.094 19.31-0.003 0.5424-0.6072 2.14-1.343 3.549-0.7353 1.41-1.737 3.881-2.226 5.491-1.198 3.942-3.61 10.74-4.609 12.99-3.272 12.14-3.246 11.8-6.245 22.42-0.496 1.258 0 0-1.576 7.321-3.748 20.15-3.009 13.11-4.317 23.17-1.352 2.619 1.122 5.404 9.052 10.19 3.933 2.373 12.09 7.361 18.13 11.08 6.04 3.723 11.6 7.054 12.35 7.402 0.755 0.348 2.355 1.386 3.555 2.307 2.62 2.01 4.558 2.145 5.241 0.3653zm106-121.3c3.316-6.795 7.498-15.03 9.292-18.3 3.344-6.098 4.269-7.599 11.65-18.9 2.351-3.602 4.274-7.027 4.274-7.612 0-2.655-12.48 3.857-30.66 16-21.15 14.13-19.95 13.03-19.32 17.67 3.48 12.15 5.168 19.16 11.6 31.35 1.504 1.504 2.161 1.668 3.203 0.8031 3.082-7.212 6.902-14.74 9.958-21z" />
+                        </g>
+                    </svg>
                 </div>
-          </div>
+                <div class="row justify-content-center align-items-center">
+                    <span class="text-primary display-4">YourPal<b>Nurav</b></span>
+                </div>
+                <hr class='bg-primary'>
+                <div class='container-fluid text-center mt-0 pt-0 text-primary' style='margin-top:60px;'>
+                    <span class='h1'>
+                      <b>404</b>
+                    </span>
+                    <br>
+                    <span class='h2'>
+                      There's nothing here!
+                    </span>
+                    <br>
+                    <span class='h1-responsive text-white container'>Sorry, looks like you have found a broken link;</span>
+                    <br>
+                    <br>
+                    <span class='h1-responsive text-white container'>
+                      <div class="btn-group">
+                        <a href="javascript:history.back()" type="button" class="btn btn-primary"><i class="fa fa-arrow-left"></i>&nbsp&nbspGo Back</a>
+                        <a type="button" class="btn btn-primary">or</a>
+                        <a href="https://yourpalnurav.github.in/" type="button" class="btn btn-primary">Go home&nbsp&nbsp<i class="fa fa-home"></i></a>
+                      </div>
+                    </span>
+                    <br>
+                    <br>
+                    <span class='h1-responsive text-white container'>Please try using the navigation or the search bar below.</span>
+                    <span class='h1-responsive text-white container'>
+                        <script>
+                          (function() {
+                            var cx = '003718711808949844561:7k1ma_ko0yy';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                          })();
+                        </script>
+                        <gcse:search></gcse:search>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--======== .testMatter Ends =============-->
+        <nav id="menu1">
+            <div id="panel-menu">
+                <ul>
+                    <li><a href="#/">Home</a></li>
+                    <li><span>About us</span>
+                        <ul>
+                            <li><a href="#/">History</a></li>
+                            <li><span>The team</span>
+                                <ul>
+                                    <li><a href="#/">Management</a></li>
+                                    <li><a href="#/">Sales</a></li>
+                                    <li><a href="#/">Development</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#/">Our address</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/">Contact</a></li>
+                    <li class="Divider">Other demos</li>
+                    <li><a href="default.html">Default demo</a></li>
+                    <li><a href="onepage.html">One page demo</a></li>
+                </ul>
+            </div>
+            <div id="panel-account">
+                <ul>
+                    <li><a href="#/">Home2</a></li>
+                    <li><span>About u2s</span>
+                        <ul>
+                            <li><a href="#/">History2</a></li>
+                            <li><span>The team2</span>
+                                <ul>
+                                    <li><a href="#/">Management2</a></li>
+                                    <li><a href="#/">Sales2</a></li>
+                                    <li><a href="#/">Development2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#/">Our address2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/">Contact2</a></li>
+                    <li class="Divider">Other demo2s</li>
+                    <li><a href="default.html">Default demo2</a></li>
+                    <li><a href="onepage.html">One page demo2</a></li>
+                </ul>
+            </div>
+            <div id="panel-cart">
+                <p style="text-align: center; padding-top: 30px;">Your shoppingcart is empty.
+                    <br />
+                    <a href="#/">Continue shopping.</a></p>
+            </div>
+        </nav>
+        <!--======== #menu1 Left SideMmenu Ends =============-->
+        <nav id="menu2">
+            <div id="panel-menu2">
+                <ul>
+                    <li><a href="#/">Home</a></li>
+                    <li><span>About us</span>
+                        <ul>
+                            <li><a href="#/">History</a></li>
+                            <li><span>The team</span>
+                                <ul>
+                                    <li><a href="#/">Management</a></li>
+                                    <li><a href="#/">Sales</a></li>
+                                    <li><a href="#/">Development</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#/">Our address</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/">Contact</a></li>
+                    <li class="Divider">Other demos</li>
+                    <li><a href="default.html">Default demo</a></li>
+                    <li><a href="onepage.html">One page demo</a></li>
+                </ul>
+            </div>
+            <div id="panel-account2">
+                <ul>
+                    <li><a href="#/">Home2</a></li>
+                    <li><span>About u2s</span>
+                        <ul>
+                            <li><a href="#/">History2</a></li>
+                            <li><span>The team2</span>
+                                <ul>
+                                    <li><a href="#/">Management2</a></li>
+                                    <li><a href="#/">Sales2</a></li>
+                                    <li><a href="#/">Development2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#/">Our address2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/">Contact2</a></li>
+                    <li class="Divider">Other demo2s</li>
+                    <li><a href="default.html">Default demo2</a></li>
+                    <li><a href="onepage.html">One page demo2</a></li>
+                </ul>
+            </div>
+            <div id="panel-cart2">
+                <p style="text-align: center; padding-top: 30px;">Your shoppingcart is empty.
+                    <br />
+                    <a href="#/">Continue shopping.</a></p>
+            </div>
+        </nav>
+        <!--======== #menu2 Right SideMmenu Ends =============-->
+    </div>
+    <!--======== #page Ends =============-->
+    <!--script src='js/jquery.min.js'></script>
+    <script src='js/hammer.min.js'></script>
+    <script src='js/jquery.mmenu.all.js'></script>
+    <script src='js/popper.min.js'></script>
+    <script src='js/bootstrap.min.js'></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/ypn.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('nav#menu1').mmenu({
+            navbar: { title: "" },
+            extensions: [ /*"listview-30",*/ "multiline", "theme-dark", "effect-panels-slide-100", "effect-listitems-slide", "shadow-page", "border-full", "pagedim-black"],
+            setSelected: true,
+            counters: true,
+            searchfield: {
+                placeholder: 'Search menu items . . .'
+            },
+            navbars: [{
+                    "position": "top",
+                    "content": ["<a href='https://yourpalnurav.blogspot.in/' style='color:aqua'>YourPal<b>Nurav</b></a>", "close"]
+                }, {
+                    "position": "top",
+                    type: 'tabs',
+                    content: [
+                        '<a href="#panel-menu"><i class="fa fa-bars"></i> <span>Menu</span></a>',
+                        '<a href="#panel-account"><i class="fa fa-user"></i> <span>Account</span></a>',
+                        '<a href="#panel-cart"><i class="fa fa-shopping-cart"></i> <span>Cart</span></a>'
+                    ]
+                },
+                {
+                    content: ['searchfield']
+                }, {
+                    position: 'bottom',
+                    content: ['<a href="#/"><span class="fa fa-twitter"></span></a>',
+                        '<a href="#/"><span class="fa fa-facebook"></span></a>',
+                        '<a href="#/"><span class="fa fa-youtube"></span></a>'
+                    ]
+                }
+            ]
+        }, {
+            searchfield: {
+                "clear": true,
+                "resultsPanel": true,
+                "showTextItems": true
+            }
+        });
 
-    
-    
+    });
 
+    $(function() {
+        $('nav#menu2').mmenu({
+            navbar: { title: "" },
+            extensions: [ /*"listview-30",*/ "multiline", "theme-dark", "effect-panels-slide-100", "effect-listitems-slide", "shadow-page", "border-full", "pagedim-black", "position-right"],
+            setSelected: true,
+            counters: true,
+            searchfield: {
+                placeholder: 'Search menu items . . .'
+            },
+            navbars: [{
+                    "position": "top",
+                    "content": ["<a href='https://yourpalnurav.blogspot.in/' style='color:aqua'><b>Menu2</b></a>", "close"]
+                }, {
+                    "position": "top",
+                    type: 'tabs',
+                    content: [
+                        '<a href="#panel-menu2"><i class="fa fa-bars"></i> <span>Menu2</span></a>',
+                        '<a href="#panel-account2"><i class="fa fa-user"></i> <span>Account2</span></a>',
+                        '<a href="#panel-cart2"><i class="fa fa-shopping-cart"></i> <span>Cart2</span></a>'
+                    ]
+                },
+                {
+                    content: ['searchfield']
+                }, {
+                    position: 'bottom',
+                    content: ['<a href="#/"><span class="fa fa-twitter"></span></a>',
+                        '<a href="#/"><span class="fa fa-facebook"></span></a>',
+                        '<a href="#/"><span class="fa fa-youtube"></span></a>'
+                    ]
+                }
+            ]
+        }, {
+            searchfield: {
+                "clear": true,
+                "resultsPanel": true,
+                "showTextItems": true
+            }
+        });
 
-          <script>
-            (function() {
-              var cx = '003718711808949844561:7k1ma_ko0yy';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-  </body>
+    });
+    </script>
+    <script type="text/javascript">
+    var prev = 0;
+    var $window = $(window);
+    var nv2 = $('.vj-bar');
+
+    $window.on('scroll', function() {
+        var scrollTop = $window.scrollTop();
+        nv2.toggleClass('hid', scrollTop > prev);
+        prev = scrollTop;
+    });
+    </script>
+</body>
+
 </html>
